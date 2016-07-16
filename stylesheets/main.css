@@ -1,0 +1,73 @@
+/*
+簡単なCSSの説明
+・CSSはHTML要素の装飾を行います
+・以下の形式で装飾を指定します
+  セレクタ {
+     プロパティ名: 値;
+  }
+  セレクタは，装飾の対象となる要素
+  プロパティは適用する装飾の種類です．
+
+  どのようなプロパティがあるのかについては以下を参考にしてください．
+  URL: http://www.htmq.com/style/index.shtml
+*/
+
+
+
+/* ブラウザがデフォルトで設定しているスタイルをリセット  */
+html,body{
+  margin:0;
+  padding:0;
+}
+body{
+  background: #F8F8F8;
+}
+
+/* ヘッダー */
+.header{
+  width:90%;
+  height:80px;
+  margin:0 auto;
+  font-size:30px;
+  line-height:80px;  
+}
+
+/* ナビゲーション */
+ul{
+  width:90%;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  background:#FFFFFF;
+  list-style:none;
+}
+ul > li{
+  float:left;
+  width:100px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+ul > li > a{
+  text-decoration:none;
+  color:#799DCB;
+}
+
+/* メインとなるコンテンツの部分 */
+.contents{
+  width:90%;
+  margin:10px auto;
+  padding:10px;
+  box-sizing:border-box;
+  background:#ffffff;
+}
+.contents > h1{
+  font-size:24px;
+}
+.contents > h2{
+  font-size:16px;
+}
+.contents > img{
+  width:150px;
+  height:auto;
+}
